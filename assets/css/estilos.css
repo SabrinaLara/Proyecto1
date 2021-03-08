@@ -1,0 +1,292 @@
+/*Estilos globales - 1em=16px*/
+
+body {
+	margin: 0em;
+	font-family: sans-serif;
+}
+/*comienzo nav*/
+
+.headerTitle {
+	font-size: 1.4em;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #ffc107;
+	text-decoration: none;
+	line-height: 3.1em;
+}
+
+.headerTitle:hover {
+	color: yellow;
+}
+
+.customNav {
+	background-color: #383838;
+	opacity: 0.7;
+	box-shadow: 0 15px 20px 0 rgb(0 0 0 / 35%);
+	padding: 0.5em;
+}
+
+.customNav:hover {
+	opacity: 1;
+}
+
+.customMenu li a:hover {
+	background-color: #3d3d3d;
+	color:white;
+	transition: all .5s;
+}
+
+.marginTop {
+	margin-top: 8em;
+}
+
+.marginContact {
+	margin-top: 4em;
+}
+/*fin nav*/
+
+/*Comienzo carousel*/
+/*
+.carouselc {
+	margin-top: 6em;
+}
+*/
+.carouselCustom h3 {
+	font-size: 2.4em;
+	font-weight: bold;
+}
+
+.verLink {
+	font-weight: bold;
+}
+
+.verLink:hover {
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+
+/*fin carousel*/
+
+/*comienzo seccion instrumentos*/
+
+.titleInstruCustom {
+	color: white;
+	font-size: 1.1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #383838;
+	padding: 1em;
+
+	/*flex*/
+	display: flex;
+	align-items: center;
+	justify-content: center;    
+}
+
+.titleInstruCustom:hover {
+	color: #ffc107;
+}
+
+.customImgInst {
+	width: 15em;
+    height: 14.7em;
+    margin: 3.1em;
+    transition: transform 1s;
+
+    /*flex*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.customImgInst:hover {
+	transform: scaleX(1.2);
+}
+
+/*fin seccion instrumentos*/
+
+/*comienzo seccion marcas*/
+
+.titleInstruBrand {
+	font-size: 1.2em;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #ffc107;
+	margin: 1em;
+
+	/*flex*/
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.customImgBrand {
+	width: 20em;
+    height: 10.5em;
+}
+
+/*fin seccion marcas*/
+
+/*inicio footer*/
+
+.customFooter {
+	font-size: 1.1em;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 1.2em;
+	background-color: #383838;
+	color: #ffffff;
+	margin: auto;
+
+	/*gradiente*/
+	background-image: linear-gradient(to bottom, #383838 , #636e72);
+}
+
+.customFooter h4 {
+	color: #ffc107;
+}
+
+.customSocial {
+	list-style-type: none;
+	padding-inline-start: 0em;
+	/*FLEX*/
+	display: flex;
+    justify-content: center;
+}
+
+.customIcon {
+	height: 3em;
+	margin: 0.2em;
+}
+
+.customIcon:hover {
+	animation: rotateIn;
+	animation-duration: 0.5s;
+}
+
+.customSocial li a {
+	text-decoration: none;
+	color: white;
+}
+/*inicio footer*/
+
+/*Acá empiezan los estilos de intrumentos y saxofones*/
+
+.instruSection h2{
+
+	/*FLEX*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.instruSection h3 {
+	border-bottom: solid 0.2em #ffc107;
+}
+
+.titleSectionClari {
+	border-bottom: solid 0.1em #ffc107;
+}
+
+.customInstr {
+	width: 100%;
+	max-width: 99.5em;
+	height: auto;
+
+	animation: slideInLeft;
+	animation-duration: 3s;
+}
+
+/*Acá empiezan los estilos de accesorios*/
+
+.accesorios {
+	text-align: center;
+}
+
+.accesorios h2{
+	border-bottom: solid 0.2em #ffc107;
+}
+
+.accesorios img{
+	width: 31.2em;
+	height: 18.7em;
+	margin: auto;
+	display: block;
+
+	animation: zoomIn;
+	animation-duration: 1s
+}
+
+/*Acá empiezan los estilos de artistas*/
+
+.sectionArtist {
+	font-size: 1.1em;
+	
+		/*FLEX*/
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.sectionArtist h3{
+	animation: fadeInTopLeft;
+	animation-duration: 1s;
+}
+
+.customImgArt {
+	width: 32.2em;
+    height: 21.7em;
+}
+
+.customImgArt:hover {
+	transform: rotate(2deg);
+}
+
+.titleArtist {
+    border-bottom: solid 0.3em #ffc107;
+    margin: 1em;
+    padding: 0em;
+}
+
+
+/*fin estilos de artistas*/
+
+/*Acá empiezan los estilos de contacto*/
+.contacto {
+	font-size: 1.1em;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+	margin: 0.5em;
+}
+
+.customContacto {
+	border: solid 0.5em #ffc107;
+	margin: 1em;
+	background: #ffc1092e;
+}
+
+.formulario {
+	font-size: 1.1em;
+	font-family: sans-serif;
+	text-align: center;
+	margin: 1em;
+	border: solid 0.5em #ffc107;
+	padding: 1em;
+	background: #ffc1092e;
+
+	animation: slideInUp;
+	animation-duration: 3s;
+}
+
+.formulario legend {
+	font-weight: bold;
+}
+
+/*Fin estilos de contacto*/
