@@ -6,7 +6,7 @@ body {
 }
 /*comienzo nav*/
 
-.headerTitle {
+.block-one__title {
 	font-size: 1.4em;
 	font-family: sans-serif;
 	font-weight: bold;
@@ -15,52 +15,41 @@ body {
 	line-height: 3.1em;
 }
 
-.headerTitle:hover {
+.block-one__title:hover {
 	color: yellow;
 }
 
-.customNav {
+.block-one__nav {
 	background-color: #383838;
 	opacity: 0.7;
 	box-shadow: 0 15px 20px 0 rgb(0 0 0 / 35%);
 	padding: 0.5em;
 }
 
-.customNav:hover {
+.block-one__nav:hover {
 	opacity: 1;
 }
 
-.customMenu li a:hover {
+.block-one__menu li a:hover {
 	background-color: #3d3d3d;
 	color:white;
 	transition: all .5s;
 }
 
-.marginTop {
-	margin-top: 8em;
-}
-
-.marginContact {
-	margin-top: 4em;
-}
 /*fin nav*/
 
 /*Comienzo carousel*/
-/*
-.carouselc {
-	margin-top: 6em;
-}
-*/
-.carouselCustom h3 {
+
+.block-two__carousel-custom h3 {
 	font-size: 2.4em;
 	font-weight: bold;
 }
 
-.verLink {
+.block-two__carousel-link {
 	font-weight: bold;
 }
 
-.verLink:hover {
+.block-two__carousel-link:hover {
 	font-weight: bold;
 	color: black;
 	text-decoration: none;
@@ -70,7 +59,7 @@ body {
 
 /*comienzo seccion instrumentos*/
 
-.titleInstruCustom {
+.block-three__title-instru {
 	color: white;
 	font-size: 1.1em;
 	text-decoration: none;
@@ -84,11 +73,11 @@ body {
 	justify-content: center;    
 }
 
-.titleInstruCustom:hover {
+.block-three__title-instru:hover {
 	color: #ffc107;
 }
 
-.customImgInst {
+.block-three__img-instru {
 	width: 15em;
     height: 14.7em;
     margin: 3.1em;
@@ -102,15 +91,11 @@ body {
 	justify-content: center;
 }
 
-.customImgInst:hover {
-	transform: scaleX(1.2);
-}
-
 /*fin seccion instrumentos*/
 
 /*comienzo seccion marcas*/
 
-.titleInstruBrand {
+.block-four__title-instru-brand {
 	font-size: 1.2em;
 	font-family: sans-serif;
 	font-weight: bold;
@@ -125,7 +110,7 @@ body {
     justify-content: center;
 }
 
-.customImgBrand {
+.block-four__img-brand {
 	width: 20em;
     height: 10.5em;
 }
@@ -134,7 +119,7 @@ body {
 
 /*inicio footer*/
 
-.customFooter {
+.block-five__custom-footer {
 	font-size: 1.1em;
 	font-family: sans-serif;
 	text-align: center;
@@ -147,11 +132,11 @@ body {
 	background-image: linear-gradient(to bottom, #383838 , #636e72);
 }
 
-.customFooter h4 {
+.block-five__custom-footer h4 {
 	color: #ffc107;
 }
 
-.customSocial {
+.block-five__custom-social {
 	list-style-type: none;
 	padding-inline-start: 0em;
 	/*FLEX*/
@@ -159,25 +144,30 @@ body {
     justify-content: center;
 }
 
-.customIcon {
+.block-five__custom-social li a {
+	text-decoration: none;
+	color: white;
+}
+
+.block-five__custom-icon {
 	height: 3em;
 	margin: 0.2em;
 }
 
-.customIcon:hover {
+.block-five__custom-icon:hover {
 	animation: rotateIn;
 	animation-duration: 0.5s;
 }
 
-.customSocial li a {
-	text-decoration: none;
-	color: white;
-}
-/*inicio footer*/
+/*fin footer*/
 
 /*Acá empiezan los estilos de intrumentos y saxofones*/
 
-.instruSection h2{
+.block-one__margin {
+	margin-top: 8em;
+}
+
+.block-one__instru-section h2{
 
 	/*FLEX*/
 	display: flex;
@@ -185,15 +175,15 @@ body {
 	align-items: center;
 }
 
-.instruSection h3 {
+.block-one__instru-section h3 {
 	border-bottom: solid 0.2em #ffc107;
 }
 
-.titleSectionClari {
+.block-one__title-clarinet {
 	border-bottom: solid 0.1em #ffc107;
 }
 
-.customInstr {
+.block-one__instrument-custom {
 	width: 100%;
 	max-width: 99.5em;
 	height: auto;
@@ -202,17 +192,21 @@ body {
 	animation-duration: 3s;
 }
 
+/*Fin de estilos de intrumentos y saxofones*/
+
 /*Acá empiezan los estilos de accesorios*/
 
-.accesorios {
+.block-one__accesorios {
 	text-align: center;
 }
 
-.accesorios h2{
+
+.block-one__accesorios h2{
 	border-bottom: solid 0.2em #ffc107;
 }
 
-.accesorios img{
+
+.block-one__accesorios img{
 	width: 31.2em;
 	height: 18.7em;
 	margin: auto;
@@ -224,7 +218,7 @@ body {
 
 /*Acá empiezan los estilos de artistas*/
 
-.sectionArtist {
+.block-one__section-artists {
 	font-size: 1.1em;
 	
 		/*FLEX*/
@@ -234,31 +228,35 @@ body {
 	align-items: center;
 }
 
-.sectionArtist h3{
+.block-one__section-artists h3{
 	animation: fadeInTopLeft;
 	animation-duration: 1s;
 }
 
-.customImgArt {
+.block-one__title-artists {
+    border-bottom: solid 0.3em #ffc107;
+    margin: 1em;
+    padding: 0em;
+}
+
+.block-one__img-artists {
 	width: 32.2em;
     height: 21.7em;
 }
 
-.customImgArt:hover {
+.block-one__img-artists:hover {
 	transform: rotate(2deg);
-}
-
-.titleArtist {
-    border-bottom: solid 0.3em #ffc107;
-    margin: 1em;
-    padding: 0em;
 }
 
 
 /*fin estilos de artistas*/
 
 /*Acá empiezan los estilos de contacto*/
-.contacto {
+.block-one__margin-contact {
+	margin-top: 4em;
+}
+
+.block-one__contact {
 	font-size: 1.1em;
 	font-family: sans-serif;
 	font-weight: bold;
@@ -266,13 +264,13 @@ body {
 	margin: 0.5em;
 }
 
-.customContacto {
+.block-one__contact-custom {
 	border: solid 0.5em #ffc107;
 	margin: 1em;
 	background: #ffc1092e;
 }
 
-.formulario {
+.block-two__form {
 	font-size: 1.1em;
 	font-family: sans-serif;
 	text-align: center;
@@ -281,11 +279,11 @@ body {
 	padding: 1em;
 	background: #ffc1092e;
 
-	animation: slideInUp;
-	animation-duration: 3s;
+	animation: backInLeft;
+	animation-duration: 1s;
 }
 
-.formulario legend {
+.block-two__form legend {
 	font-weight: bold;
 }
 
